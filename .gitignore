@@ -1,4 +1,15 @@
-__pycache
-.pytest_cache
-.zip
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
 
+# macOS
+.DS_Store
+
+# 编辑器备份文件
+*~
+
+# 数据集压缩包（代码读的是解压后的 data/<NAME>/ 目录，zip 只是下载残留）
+*.zip
