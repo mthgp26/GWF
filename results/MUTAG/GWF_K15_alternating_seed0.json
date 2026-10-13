@@ -1,0 +1,18 @@
+{
+  "dataset": "MUTAG",
+  "model": "GWF",
+  "K": 15,
+  "M": 20,
+  "L": 5,
+  "gamma": 0.01,
+  "lr": 0.01,
+  "epochs": 10,
+  "optim": "alternating",
+  "inner_iter": 50,
+  "seed": 0,
+  "metric": "RI",
+  "value": 0.6074638752986687,
+  "final_loss": 18.849909216799634,
+  "runtime_sec": 3966.8484411239624,
+  "device": "cpu"
+}

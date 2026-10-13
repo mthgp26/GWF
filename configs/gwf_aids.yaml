@@ -1,0 +1,22 @@
+# GWF 直推式 — AIDS 聚类（2000 图，注意性能）
+dataset: AIDS
+model: GWF
+
+K: 15
+factor_nodes: 10
+gwd: ppa
+M: 20
+L: 5
+gamma_ppa: 0.01
+gamma_badmm: 1.0
+
+lr: 0.01
+epochs: 10
+optim: alternating
+loss_normalize: false
+symmetrize: false
+normalize: true
+zero_diag: true
+
+device: mps
+seed: 0

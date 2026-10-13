@@ -1,0 +1,27 @@
+# GWF-GNN 归纳式 — ENZYMES（带节点属性，GIN 编码器）
+dataset: ENZYMES
+model: GWF-GNN
+
+K: 30
+factor_nodes: 10
+gwd: ppa
+M: 20
+L: 5
+gamma_ppa: 0.01
+gamma_badmm: 1.0
+
+encoder: GIN        # GIN | DiffPool
+gnn_layers: 5       # {5,10,15}
+gnn_hidden: 32
+use_node_degree: false   # 无属性图：false=全1，true=节点度（SPEC §9 条目 5）
+
+lr: 0.01
+epochs: 10
+optim: joint        # GNN 版默认联合优化
+loss_normalize: false
+symmetrize: false
+normalize: true
+zero_diag: true
+
+device: mps
+seed: 0

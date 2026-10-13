@@ -1,0 +1,22 @@
+# GWF 直推式 — MUTAG 聚类（Phase 5/6 验收：K=15 PPA RI≈69.2，偏差≤3）
+dataset: MUTAG
+model: GWF
+
+K: 15            # 图因子数量（SPEC §7.1）
+factor_nodes: 10 # N_k 因子节点数（SPEC §9 条目 2 默认 10）
+gwd: ppa         # GWD 求解器：ppa | badmm
+M: 20            # GWD 迭代次数
+L: 5             # GWB 迭代次数
+gamma_ppa: 0.01
+gamma_badmm: 1.0
+
+lr: 0.01
+epochs: 10
+optim: alternating   # joint | alternating
+loss_normalize: false
+symmetrize: false
+normalize: true
+zero_diag: true
+
+device: mps
+seed: 0
